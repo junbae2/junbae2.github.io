@@ -1,0 +1,37 @@
+{
+  "name": "junbae2.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "prebuild": "rimraf dist",
+    "build": "webpack --progress --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junbae2/junbae2.github.io.git"
+  },
+  "keywords": [],
+  "author": "junbae2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junbae2/junbae2.github.io/issues"
+  },
+  "homepage": "https://github.com/junbae2/junbae2.github.io#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
