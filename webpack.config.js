@@ -3,12 +3,12 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: {
-    'js/app': ['./src/App.js'],
-  },
+  entry: './src/App.js',
+  // 'js/app': ['./src/App.js'],
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/',
+    filename: 'index_bundle.js',
+    // publicPath: '/',
   },
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html',
+      // filename: 'index.html',
     }),
   ],
 }
