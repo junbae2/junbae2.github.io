@@ -1,13 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import Pages from './pages'
+import { Route, Routes } from 'react-router-dom'
+
+import Home from './pages/home'
+import About from './pages/about'
 
 const App = () => {
   return (
     <div>
-      <Pages/>
+      <Routes>
+        <Route index element={Home}/>
+        <Route path="/about" element={About}/>
+      </Routes>
     </div>
   )
-
 }
-ReactDOM.render(<App/>, document.getElementById('app'))
+
+export default App
