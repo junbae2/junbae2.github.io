@@ -8,8 +8,8 @@ const Pages = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact={true} path="/" component={Home}/>
-        <Route path="/about" component={About}/>
+        <Route exact={true} path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
     </BrowserRouter>
   )
