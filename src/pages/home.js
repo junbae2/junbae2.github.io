@@ -1,19 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import Header from '../components/Header'
+import Navigation from '../components/Navigation'
 
 const Home = () => {
   return (
     <div>
-      <h1>Funlog</h1>
-      <p>This is the junbae's funlogs</p>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+      <Header/>
+      <Navigation/>
+      <p>This is the Junbae's Funlog</p>
     </div>
   )
 }
