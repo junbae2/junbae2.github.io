@@ -10,15 +10,8 @@ const Pages = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          {/*<Navigation/>*/}
           <Route exact={true} path="/" element={<Home/>}/>
-          {/*<main>*/}
           <Route path="/about" element={<About/>}/>
-          {/*</main>*/}
-          {/*<Layout>*/}
-          {/*  <Route exact={true} path="/" element={<Home/>}/>*/}
-          {/*  <Route path="/about" element={<About/>}/>*/}
-          {/*</Layout>*/}
         </Routes>
       </Layout>
     </BrowserRouter>
