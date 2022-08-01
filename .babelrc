@@ -1,16 +1,4 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "browsers": [
-            "last 2 versions",
-            ">= 5% in KR"
-          ]
-        }
-      }
-    ],
-    "@babel/react"
-  ]
+  "presets": ["env", "react"],
+  "plugins": ["babel-plugin-styled-components", "transform-object-rest-spread"]
 }
